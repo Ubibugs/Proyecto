@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+/* organizacion general  */
+:root{
+    --orange:#b83e3e;
+  }
+  
+  *{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    transition:all .2s linear;
+    text-transform: capitalize;
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    overflow-x: hidden;
+    background:hsl(19, 100%, 96%);
+  }
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 1.7rem;
+    color:#444;
+    margin:2rem 0;
+    padding-top: 6rem;
+    text-decoration-style: solid;
+    text-decoration-color: var(--orange);
+    text-underline-offset:-1.4rem;
+  }
+  
+/* header  */
+
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    background:#fff;
+    z-index: 100;
+    padding:1rem 2rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+  }
+  
+  .header .logo img{
+    height: 4rem;
+  }
+  
+  .header nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:0; padding:0;
+  }
+  
+  .header nav ul li{
+    margin: 0 1.5rem;
+  }
+  
+  .header nav ul li a{
+    font-size: 2rem;
+    color:#666;
+  }
+  
+  .header nav ul li a:hover{
+    color:#000;
+    text-decoration: none;
+  }
+  
+  .header .fa-bars{
+    font-size: 2.5rem;
+    color:#666;
+    cursor: pointer;
+    display: none;
+  }
+  
+
+/* carrusel */
+
+  /* Estilos para el carrusel de imágenes */
+  .carousel-item img {
+    height: 770px; /* Cambia la altura de las imágenes */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    color: #b83e3e; /* Cambia el color de las flechas */
+  }
+  
+  .carousel-indicators li {
+    background-color: #F2F2F2; /* Cambia el color de fondo de los indicadores */
+  }
+  
+  .carousel-indicators .active {
+    background-color: #b83e3e; /* Cambia el color de fondo del indicador activo */
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+/* nosotros  */
+  .nosotros{
+    min-height: 100vh;
+    padding-bottom: 3rem;
+  }
+  
+  .nosotros .image{
+    padding:2rem;
+  }
+  
+  .nosotros .image img{
+    height:43rem;
+    object-fit: cover;
+    box-shadow: 2.5rem 2.5rem 0 1rem var(--orange);
+  }
+  
+  .nosotros .info{
+    padding:2rem;
+    margin-top: 3rem;
+  }
+  
+  .nosotros .info h2{
+    color:hsl(19, 100%, 96%);
+    font-size: 3rem;
+  }
+  
+  .nosotros .info p{
+    font-size: 2rem;
+    color:#444;
+    margin:2rem 0;
+  }
+
+  .btn{
+    font-size: 2rem;
+    padding:.7rem 3rem;
+    text-align: center;
+    background:#333;
+    color:hsl(19, 100%, 96%);
+    margin-top: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background:hsl(0, 55%, 36%);
+}
+
+
+.galeria{
+    min-height:100vh;
+    background:#b83e3e;
+  }
+  
+  .galeria .heading{
+    color:#fff;
+  }
+  
+  .galeria .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .galeria .box-container .box{
+    height:20rem;
+    width:30rem;
+    border-radius: .5rem;
+    margin:2rem;
+    overflow: hidden;
+    box-shadow: 0 .3rem .5rem #000;
+  }
+  
+  .galeria .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+  }
+  
+  .galeria .box-container .box:hover img{
+    transform: scale(1.3);
+  }
+
+  .galeria .box-container .btn{
+    font-size: 2rem;
+    padding:.7rem 3rem;
+    text-align: center;
+    background:hsl(19, 100%, 96%);
+    color:hsl(0, 0%, 21%);
+    margin-top: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.galeria .box-container .btn:hover{
+    background:hsl(0, 55%, 36%);
+}
+
+
+
+
+/* servicio  */
+.servicios{
+    min-height: 100vh;
+  }
+  
+  .servicios .box-container{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .servicios .box-container .box{
+    height:33rem;
+    width:33rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+    border-left: .5rem solid var(--orange);
+    border-right: .5rem solid var(--orange);
+    border-bottom: .5rem solid var(--orange);
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 6rem;
+    margin:2rem 3rem;
+  }
+  
+  .servicios .box-container .box .fas{
+    color:var(--orange);
+    font-size: 5rem;
+  }
+  
+  .servicios .box-container .box p{
+    color:#333;
+    font-size: 1.7rem;
+    margin:2rem 0;
+  }
+
+ /* Estilos para la sección de contacto */
+ .contact {
+    padding: 100px 0;
+    background-color: #fff;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  .contact form {
+    margin-bottom: 50px;
+  }
+  
+  .contact form .form-control {
+    font-size: 1.5rem;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .contact form textarea.form-control {
+    height: 200px;
+  }
+  
+  .contact form button[type="submit"] {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .contact .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact .contact-info li {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact .contact-info i {
+    font-size: 2.5rem;
+    color: #555;
+    margin-right: 20px;
+  }
+  
+
+  
+  
+  .footer{
+    background:hsl(0, 55%, 36%);
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+    margin:2rem;
+    flex:1 1 30rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:#fff;
+}
+
+.footer .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    padding:1rem 0;
+}
+
+.footer .box-container .box a{
+    font-size: 1.8rem;
+    color:#eee;
+    padding:.4rem 0;
+    display: block;
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .box-container .box:nth-child(2){
+    text-align: center;
+}
+
+.footer .box-container form{
+    display: flex;
+    align-items: center;
+}
+
+.footer .box-container form input[type="email"]{
+    height:4.1rem;
+    width:100%;
+    font-size: 1.7rem;
+    padding:0 1rem;
+}
+
+.footer .box-container form .btn{
+    margin-top: 0;
+}
+
+.footer .box-container form .btn:hover{
+    color:hsl(0, 55%, 36%);;
+    background:#ccc;
+}
+
+.footer .credit{
+    font-size: 2rem;
+    background:hsl(0, 55%, 36%);
+    text-align: center;
+    color:#fff;
+    padding:2rem 1rem;
+    font-weight: normal;
+}
+
+.footer .credit a{
+    color:var(--orange);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+/* header  */
+
+@media (max-width:768px){
+
+    html{
+      font-size: 50%;
+    }
+  
+    .header .fa-bars{
+      display: block;
+    }
+  
+    .header nav{
+      position: fixed;
+      top:6rem; right: -120%;
+      height:calc(100vh - 6rem);
+      width:100vw;
+      background: rgba(0,0,0,.5);
+      z-index: 1000;
+      border-top: .1rem solid rgba(0,0,0,.3);
+    }
+  
+    .header nav ul{
+      height: 100%;
+      width:33rem;
+      background:#fff;
+      flex-flow: column;
+      justify-content: center;
+      float: right;
+    }
+  
+    .header nav ul li{
+      margin:1rem 0;
+    }
+  
+    .header nav ul li a{
+      display: block;
+      padding:.5rem 0;
+      border: .1rem solid rgba(0,0,0,.3);
+      width:25rem;
+      border-radius: 5rem;
+      text-align: center;
+    }
+  
+    .header nav ul li a:hover{
+      background:#333;
+      color:#fff;
+    }
+  
+    .header .nav-toggle{
+      right: 0%;
+    }
+  
+  }
+
+/* carrusel  */
+
+  .carousel-item {
+    max-height: 770px;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-item {
+      max-height: 400px;
+    }
+  }
+  
+
+  @media only screen and (max-width: 767px) {
+    .carousel-item {
+      max-height: 300px;
+    }
+  }
+
+
+  .footer .box-container .box:last-child{
+    text-align: center;
+}
+
+.footer .box-container .box:last-child p{
+    font-size: 1.7rem;
+}
+
+.footer .box-container .box:last-child form{
+    flex-flow: column;
+}
+
+.footer .box-container .box:last-child form .btn{
+    margin-top: 1rem;
+    width:100%;
+}
